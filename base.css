@@ -1,9 +1,13 @@
 body {
   font-family: 'Poiret One', cursive;
   font-weight: bold;
+  color: #efefef;
   letter-spacing: 1px;
-  width: 760px;
+  width: 100%;
   margin: 0 auto;
+  text-align: center;
+  background: url();
+  background-size: cover;
 }
 
 nav {
@@ -17,5 +21,6 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #222;
+  /*color: #222;*/
+  color: #efefef;
 }
