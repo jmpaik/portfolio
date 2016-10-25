@@ -1,0 +1,15 @@
+.name h1 {
+  padding: 50px;
+  font-size: 72px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.41);
+}
+
+/*.about-one {
+  margin-bottom: 30px;
+  padding: 15px;
+}*/
+
+.profile-img {
+  margin: 50px;
+}
