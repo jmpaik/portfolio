@@ -15,7 +15,7 @@ function Project (options) {
 };
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('project.template').clone();
+  var $newProject = $('article.template').clone();
   /* TODO: We also need to fill in:
   1. author name
   2. author url
