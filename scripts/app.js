@@ -48,6 +48,6 @@ projectsList.forEach(function(ele) {
   projects.push(new Project(ele));
 });
 
-projects.forEach(function(article) {
+projects.forEach(function(project) {
   $('#projects').append(project.toHtml());
 });
