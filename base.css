@@ -49,6 +49,7 @@ main{
     display: block;
   }
   body {
-    background-image: none;
+    background-image: url("imgs/bigForest.jpg");
+    background-size: cover;
   }
 }
