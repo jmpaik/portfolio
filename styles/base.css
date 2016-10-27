@@ -52,4 +52,8 @@ main{
     background-image: url("../imgs/bigForest.jpg");
     background-size: cover;
   }
+  .resume {
+    margin: 10%;
+  }
+
 }
