@@ -10,8 +10,8 @@ body {
   background-size: cover;
 }
 
-footer img {
-  width: 5%;
+footer {
+
 }
 
 ul {
@@ -52,4 +52,8 @@ main{
     background-image: url("../imgs/bigForest.jpg");
     background-size: cover;
   }
+  .resume {
+    margin: 10%;
+  }
+
 }

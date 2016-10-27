@@ -2,7 +2,7 @@
   padding: 50px;
   font-size: 72px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.41);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #toad {
@@ -15,4 +15,12 @@
 .icons {
   max-width: 30px;
   max-height: 30px;
+}
+
+.template {
+  display: none;
+}
+
+.resume-page {
+  width: 7%;
 }
