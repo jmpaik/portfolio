@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="styles/module.css">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <script id="projects-template" type="x-handlebars-template">
+      <article class="clearfix" data-author="{{author}}">
+        <header>
+          <h1>{{title}}</h1>
+          <div class="byline">
+            By <address><a href="{{authorUrl}}">{{author}}</a></address>
+            {{publishStatus}}
+          </div>
+        </header>
+        <section class="project-body">{{{body}}}</section>
+        // <a href="#" class="read-on">Read on &rarr;</a>
+      </article>
+    </script>
+
   </head>
   <body>
     <header class="site-header clearfix">
@@ -28,7 +43,7 @@
     </header>
       <main>
         <section id="projects">
-          <article class="template" data-category="cat">
+          <article class="template">
             <header>
               <h1>Title</h1>
               <div class="byline">
@@ -44,6 +59,7 @@
       <p>&copy; 2016 BlueToad Seattle</p>
     </footer>
     <!-- // TODO: Intentionally vague: include all necessary script tags, in proper order! -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <script src="scripts/projects-list.js" type="text/javascript"> </script>
     <script src="scripts/app.js" type="text/javascript"> </script>
   </body>
