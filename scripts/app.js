@@ -1,32 +1,53 @@
-var projects = [];
-
+// var projects = [];
 function Project (options) {
+  for (var keys in options) {
+    this[keys] = options[keys];
+  }
+}
+  // this.title = options.title;
+  // this.author = options.author;
+  // this.authorUrl = options.authorUrl;
+  // this.publishedOn = options.publishedOn;
 
-  this.title = options.title;
-  this.author = options.author;
-  this.authorUrl = options.authorUrl;
-  this.publishedOn = options.publishedOn;
-  this.body = options.body;
-};
+Project.allProjects = [];
 
-Project.prototype.toHtml = function() {
-
+Project.prototype.toHtml = function(source) {
+  var templateRender = Handlebars.compile($(source).text());
   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
   this.publishStatus = this.publishedOn ? 'published ' + this.daysAgo + ' days ago' : '(draft)';
-
-  var source = $('#projects-template').html();
-  var templateRender = Handlebars.compile(source);
+  this.body = marked(this.body);
   return templateRender(this);
+  // var source = $('#projects-template').html();
 };
 
-projectsList.sort(function(a,b) {
-  return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-});
-
-projectsList.forEach(function(projectsListObject) {
-  projects.push(new Project(projectsListObject));
-});
-
-projects.forEach(function(newProjectsListObject){
-  $('#projects').append(newProjectsListObject.toHtml());
-});
+Project.loadAll = function(inputData) {
+  inputData.sort(function(a,b) {
+    return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
+  })
+  .forEach(function(ele) {
+    Project.allProjects.push(new Project(ele));
+  });
+};
+// projectsList.sort(function(a,b) {
+//   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
+// });
+Project.fetchAll = function() {
+  if (localStorage.projectsList) {
+    var fromLocalStorage = localStorage.getItem('projectsList');
+    var parsedData = JSON.parse(fromLocalStorage);
+    Project.loadAll(parsedData);
+    appView.renderIndexPage();
+  } else {
+// projectsList.forEach(function(projectsListObject) {
+//   projects.push(new Project(projectsListObject));
+// });
+    $.getJSON('../../database/projectsList.json', function(projectData){
+      localStorage.setItem('projectsList', JSON.stringify(projectData));
+      Project.loadAll(projectData);
+      appView.renderIndexPage();
+    });
+  }
+};
+// projects.forEach(function(newProjectsListObject){
+//   $('#projects').append(newProjectsListObject.toHtml());
+// });
