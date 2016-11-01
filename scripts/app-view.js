@@ -12,4 +12,11 @@ appView.handleMainNav = function () {
   $('.main-nav .tab:first').click();
 };
 
+appView.renderIndexPage = function() {
+  Project.allProjects.forEach(function(a){
+    $('#projects').append(a.toHtml('#projects-template'));
+  });
+};
+
 appView.handleMainNav();
+Project.fetchAll();
