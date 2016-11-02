@@ -15,7 +15,7 @@ Project.prototype.toHtml = function(source) {
   var templateRender = Handlebars.compile($(source).text());
   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
   this.publishStatus = this.publishedOn ? 'published ' + this.daysAgo + ' days ago' : '(draft)';
-  this.body = marked(this.body);
+  this.body = (this.body);
   return templateRender(this);
   // var source = $('#projects-template').html();
 };
@@ -33,17 +33,16 @@ Project.loadAll = function(inputData) {
 // });
 Project.fetchAll = function() {
   if (localStorage.projectsList) {
-    var fromLocalStorage = localStorage.getItem('projectsList');
-    var parsedData = JSON.parse(fromLocalStorage);
-    Project.loadAll(parsedData);
+    var projectsList = JSON.parse(localStorage.getItem('projectsList'));
+    Project.loadAll(projectsList);
     appView.renderIndexPage();
   } else {
 // projectsList.forEach(function(projectsListObject) {
 //   projects.push(new Project(projectsListObject));
 // });
-    $.getJSON('../../database/projectsList.json', function(projectData){
-      localStorage.setItem('projectsList', JSON.stringify(projectData));
-      Project.loadAll(projectData);
+    $.getJSON('../database/projectsList.json', function(data){
+      localStorage.setItem('projectsList', JSON.stringify(data));
+      Project.loadAll(data);
       appView.renderIndexPage();
     });
   }
