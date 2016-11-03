@@ -1,5 +1,3 @@
-(function(module) {
-
   function Project (options) {
     for (var keys in options) {
       this[keys] = options[keys];
@@ -38,6 +36,4 @@
         appView.renderIndexPage();
       });
     }
-
-  module.Project = Project;
-})(window);
+  };

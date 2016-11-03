@@ -10,6 +10,10 @@ body {
   background-size: cover;
 }
 
+#background {
+  display: none;
+}
+
 footer {
 
 }
@@ -37,23 +41,32 @@ main{
 }
 
 @media screen and (min-width: 580px){
+
   nav {
     margin-top: 0px;
   }
+
   nav li {
     display: inline;
     list-style: none;
     padding: 15px;
   }
+
   main {
     display: block;
   }
-  body {
-    background-image: url("../imgs/bigForest.jpg");
-    background-size: cover;
-  }
-  .resume {
-    margin: 10%;
+
+  #background {
+    display: inline;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
   }
 
+  /*.resume {
+    margin: 10%;
+  }*/
 }
