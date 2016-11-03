@@ -38,19 +38,6 @@
         appView.renderIndexPage();
       });
     }
-    
-    Project.numWordsAll = function() {
-      return Project.allProjects.map(function(project) {
-      // NOTE: Grab the word count from each project body.
-        return project.body.split(' ').length;
-      })
-      // TODO:DONE complete this reduce to get a grand total word count
-      .reduce(function(acc, cur, idx, array) {
-        acc = acc + cur;
-        return acc;
-      }, 0);
-    };
-  };
 
   module.Project = Project;
 })(window);
