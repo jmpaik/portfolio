@@ -1,3 +1,5 @@
+/*MOBILE CSS SHIT*/
+
 body {
   font-family: 'Poiret One', cursive;
   font-weight: bold;
@@ -6,12 +8,18 @@ body {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  background: url("../imgs/forest.jpg");
   background-size: cover;
 }
 
 #background {
-  display: none;
+  content: url('../imgs/forest.jpg');
+  display: inline;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 footer {
@@ -36,10 +44,12 @@ nav a {
   color: #efefef;
 }
 
-main{
-  display: none;
+#home-objects {
+  visibility: hidden;
+  height: 0px;
 }
 
+/*LARGE VIEWPORT BITCH*/
 @media screen and (min-width: 580px){
 
   nav {
@@ -52,17 +62,12 @@ main{
     padding: 15px;
   }
 
-  main {
-    display: block;
-  }
-
   #background {
-    display: inline;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+    content: url('../imgs/bigForest.jpg');
+}
+
+  #home-objects {
+    visibility: visible;
+    height: auto;
   }
 }
