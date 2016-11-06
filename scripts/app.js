@@ -25,21 +25,6 @@
     });
   };
 
-  // Project.fetchAll = function() {
-  //   if (localStorage.projectsList) {
-  //     var projectsList = JSON.parse(localStorage.getItem('projectsList'));
-  //     Project.loadAll(projectsList);
-  //     appView.renderIndexPage();
-  //   } else {
-  //
-  //     $.getJSON('../database/projectsList.json', function(data){
-  //       localStorage.setItem('projectsList', JSON.stringify(data));
-  //       Project.loadAll(data);
-  //       appView.renderIndexPage();
-  //     });
-  //   }
-  // };
-
   Project.fetchAll = function(next) {
     if (localStorage.projectsList) {
       $.ajax({

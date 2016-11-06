@@ -1,4 +1,5 @@
 (function(module) {
+  
   var appView = {};
 
   appView.handleMainNav = function () {
