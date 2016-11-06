@@ -22,10 +22,18 @@
 }
 
 .resume-page {
-  width: 60%;
-  padding: 2%;
+  width: 100%;
+  padding-top: 2%
 }
 
 #projects {
   padding: 2%;
+}
+
+@media screen and (min-width: 580px){
+
+  .resume-page {
+    width: 60%;
+  }
+
 }
