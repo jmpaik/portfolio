@@ -30,6 +30,7 @@
   padding: 2%;
 }
 
+/*CONTACT ME FORM*/
 input, textarea {
 	padding: 10px;
 	border: 1px solid #E5E5E5;
@@ -42,7 +43,7 @@ input, textarea {
 
 textarea {
 	width: 400px;
-	height: 150px;
+	height: 111px;
 	max-width: 400px;
 	line-height: 18px;
 }
@@ -56,11 +57,16 @@ input:focus, textarea:focus {
 }
 
 .form label {
-	margin-left: 10px;
+	margin-right: 10px;
 	color: #999999;
+  display: block;
+  padding-bottom: 5px;
 }
 
 .submit input {
+  float: right;
+  margin-right: 284px;
+  margin-top: 10px;
 	width: 100px;
 	height: 40px;
 	background-color: #474E69;
@@ -69,6 +75,25 @@ input:focus, textarea:focus {
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 }
+
+.form {
+  text-align: left;
+}
+
+.form p {
+  margin: 0;
+}
+
+.name-and-email {
+  float: left;
+  margin-left: 310px;
+  padding-right: 40px
+}
+
+.email {
+  padding-top: 40px;
+}
+/*CONTACT ME FORM END*/
 
 @media screen and (min-width: 580px){
 

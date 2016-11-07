@@ -23,7 +23,7 @@ body {
 }
 
 footer {
-
+  clear: both;
 }
 
 ul {
@@ -70,5 +70,5 @@ nav a {
     visibility: visible;
     height: auto;
   }
-  
+
 }

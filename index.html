@@ -87,17 +87,19 @@
           <h1>Contact BlueToad</h1>
         </section>
     	  <form class="form">
-      		<p class="name">
+          <div class="name-and-email">
+      		<p class="name-box">
+            <label for="name">Your Name</label>
       			<input type="text" name="name" id="name" placeholder="John Doe" />
-      			<label for="name">Your Name</label>
       		</p>
       		<p class="email">
+            <label for="email">Your Email</label>
       			<input type="text" name="email" id="email" placeholder="mail@example.com" />
-      			<label for="email">Your Email</label>
       		</p>
+        </div>
       		<p class="text">
-      			<textarea name="text" placeholder="Write your message here." /></textarea>
             <label for="text">Your Message</label>
+      			<textarea name="text" placeholder="Write your message here." /></textarea>
       		</p>
       		<p class="submit">
       			<input type="submit" value="Send" />
