@@ -1,4 +1,4 @@
-/*MOBILE CSS SHIT*/
+/*MOBILE VIEW CSS*/
 
 body {
   font-family: 'Poiret One', cursive;
@@ -49,7 +49,7 @@ nav a {
   height: 0px;
 }
 
-/*LARGE VIEWPORT BITCH*/
+/*LARGE VIEWPORT CSS*/
 @media screen and (min-width: 580px){
 
   nav {
