@@ -63,7 +63,7 @@ input:focus, textarea:focus {
   padding-bottom: 5px;
 }
 
-.submit input {
+.submit button {
   float: right;
   margin-right: 284px;
   margin-top: 10px;
