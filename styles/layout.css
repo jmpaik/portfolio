@@ -30,75 +30,74 @@
   padding: 2%;
 }
 
-/*CONTACT ME FORM*/
-input, textarea {
-	padding: 10px;
-	border: 1px solid #E5E5E5;
-	width: 200px;
-	color: #999999;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-}
-
-textarea {
-	width: 400px;
-	height: 111px;
-	max-width: 400px;
-	line-height: 18px;
-}
-
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-	border-color: 1px solid #C9C9C9;
-	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
-}
-
-.form label {
-	margin-right: 10px;
-	color: #999999;
-  display: block;
-  padding-bottom: 5px;
-}
-
-.submit button {
-  float: right;
-  margin-right: 284px;
-  margin-top: 10px;
-	width: 100px;
-	height: 40px;
-	background-color: #474E69;
-	color: #FFF;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-}
-
-.form {
-  text-align: left;
-}
-
-.form p {
-  margin: 0;
-}
-
-.name-and-email {
-  float: left;
-  margin-left: 310px;
-  padding-right: 40px
-}
-
-.email {
-  padding-top: 40px;
-}
-/*CONTACT ME FORM END*/
-
 @media screen and (min-width: 580px){
 
   .resume-page {
     width: 60%;
   }
+  /*CONTACT ME FORM*/
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    width: 200px;
+    color: #999999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  }
+
+  textarea {
+    width: 400px;
+    height: 111px;
+    max-width: 400px;
+    line-height: 18px;
+  }
+
+  input:hover, textarea:hover,
+  input:focus, textarea:focus {
+    border-color: 1px solid #C9C9C9;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+  }
+
+  .form label {
+    margin-right: 10px;
+    color: #999999;
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .submit button {
+    float: right;
+    margin-right: 284px;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: #474E69;
+    color: #FFF;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+  }
+
+  .form {
+    text-align: left;
+  }
+
+  .form p {
+    margin: 0;
+  }
+
+  .name-and-email {
+    float: left;
+    margin-left: 310px;
+    padding-right: 40px
+  }
+
+  .email {
+    padding-top: 40px;
+  }
+  /*CONTACT ME FORM END*/
 
 }
