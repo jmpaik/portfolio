@@ -1,11 +1,18 @@
 .name h1 {
-  padding: 50px;
+  margin-top: 74px;
   font-size: 72px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
 }
 
 #toad {
+  margin: 50px;
+  max-width: 150px;
+  max-height: 250px;
+  margin: auto 0px;
+}
+
+#toad-hi {
   margin: 50px;
   max-width: 150px;
   max-height: 250px;
