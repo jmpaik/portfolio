@@ -34,10 +34,26 @@
 }
 
 @media screen and (min-width: 580px){
-
+  /*CURRICULUMN VITAE*/
   .resume-page {
     width: 60%;
   }
+  /*CURRICULUMN VITAE END*/
+
+  /*PORTFOLIO*/
+  .byline {
+    padding-bottom: 5px;
+  }
+
+  .project-body {
+    padding-bottom: 40px;
+  }
+
+  .portfolio-main-heading h1 {
+    padding-bottom: 40px;
+  }
+  /*PORTFOLIO END*/
+
   /*CONTACT ME FORM*/
   input, textarea {
     padding: 10px;
@@ -102,17 +118,5 @@
     padding-top: 40px;
   }
   /*CONTACT ME FORM END*/
-
-  .byline {
-    padding-bottom: 5px;
-  }
-
-  .project-body {
-    padding-bottom: 40px;
-  }
-
-  .portfolio-main-heading h1 {
-    padding-bottom: 40px;
-  }
-
+  
 }
