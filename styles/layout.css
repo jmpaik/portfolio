@@ -103,4 +103,16 @@
   }
   /*CONTACT ME FORM END*/
 
+  .byline {
+    padding-bottom: 5px;
+  }
+
+  .project-body {
+    padding-bottom: 40px;
+  }
+
+  .portfolio-main-heading h1 {
+    padding-bottom: 40px;
+  }
+
 }

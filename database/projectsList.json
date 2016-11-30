@@ -1,18 +1,16 @@
 [
   {
-    "title": "Which Bin",
-    "author": "BlueToad",
-    "authorUrl": "https://jon-bovi.github.io/RecyclingFinalProject/",
-    "publishedOn": "2016-10-13",
-    "imgURL": "imgs/whichbin.png",
-    "body": "Don't know which bin to put it in, ask Which Bin!"
-  },
-  {
     "title": "Wheatlessin",
-    "author": "BlueToad",
     "authorUrl": "https://wheatlessinv1.herokuapp.com/",
     "publishedOn": "2016-11-18",
     "imgURL": "imgs/wheatlessin.png",
-    "body": "To be the most trusted gluten free site!"
+    "body": "To be the most trusted gluten free site! (Click image to launch)"
+  },
+  {
+    "title": "Which Bin",
+    "authorUrl": "https://jon-bovi.github.io/RecyclingFinalProject/",
+    "publishedOn": "2016-10-13",
+    "imgURL": "imgs/whichbin.png",
+    "body": "Don't know which bin to put it in, ask Which Bin! (Click image to launch)"
   }
 ]
