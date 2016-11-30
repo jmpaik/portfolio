@@ -33,10 +33,6 @@
   padding-top: 2%
 }
 
-#projects {
-  padding: 2%;
-}
-
 @media screen and (min-width: 580px){
 
   .resume-page {
