@@ -1,3 +1,4 @@
+/*HOME PAGE*/
 .name h1 {
   margin-top: 74px;
   font-size: 72px;
@@ -11,49 +12,77 @@
   max-height: 250px;
   margin: auto 0px;
 }
+/*HOME PAGE END*/
 
-#toad-hi {
-  margin: 50px;
-  max-width: 150px;
-  max-height: 250px;
-  margin: auto 0px;
-}
-
+/*CURRICULUMN VITAE*/
 #toad-wuh {
+  padding-bottom: 2%;
   margin: 50px;
   max-width: 150px;
   max-height: 250px;
   margin: auto 0px;
 }
 
+.resume-page {
+  width: 100%;
+  padding-bottom: 2%;
+}
+/*CURRICULUMN VITAE END*/
+
+/*PORTFOLIO*/
 #toad-mac {
   margin: 50px;
   max-height: 250px;
   margin: auto 0px;
 }
 
+.template {
+  display: none;
+}
+
+.image-homepage {
+  width: 95%;
+}
+
+.byline {
+  padding-bottom: 5px;
+}
+
+.project-body {
+  padding-bottom: 40px;
+}
+/*PORTFOLIO END*/
+
+/*CONTACT ME*/
+#toad-hi {
+  margin: 50px;
+  max-width: 150px;
+  max-height: 250px;
+  margin: auto 0px;
+}
+/*CONTACT ME END*/
+
 .icons {
   max-width: 30px;
   max-height: 30px;
 }
 
-.template {
-  display: none;
-}
-
-.resume-page {
-  width: 100%;
-  padding-top: 2%
-}
-
 @media screen and (min-width: 580px){
   /*CURRICULUMN VITAE*/
+  #toad-wuh {
+    padding-bottom: 2%;
+  }
   .resume-page {
     width: 60%;
+    padding-bottom: 2%;
   }
   /*CURRICULUMN VITAE END*/
 
   /*PORTFOLIO*/
+  .image-homepage {
+    width: 50%;
+  }
+
   .byline {
     padding-bottom: 5px;
   }
@@ -63,7 +92,7 @@
   }
   /*PORTFOLIO END*/
 
-  /*CONTACT ME FORM*/
+  /*CONTACT ME*/
   input, textarea {
     padding: 10px;
     border: 1px solid #E5E5E5;
@@ -126,6 +155,6 @@
   .email {
     padding-top: 40px;
   }
-  /*CONTACT ME FORM END*/
+  /*CONTACT ME END*/
 
 }
