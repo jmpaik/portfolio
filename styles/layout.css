@@ -60,6 +60,17 @@
   max-height: 250px;
   margin: auto 0px;
 }
+
+.form label {
+  margin-right: 10px;
+  display: block;
+  padding-bottom: 5px;
+}
+
+textarea {
+  width: 250px;
+  height: 50px;
+}
 /*CONTACT ME END*/
 
 .icons {
