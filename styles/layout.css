@@ -14,6 +14,12 @@
 }
 /*HOME PAGE END*/
 
+/*ABOUT ME*/
+#notepad {
+  width: 100%;
+}
+/*ABOUT ME END*/
+
 /*CURRICULUMN VITAE*/
 #toad-wuh {
   padding-bottom: 2%;
@@ -79,6 +85,12 @@ textarea {
 }
 
 @media screen and (min-width: 580px){
+  /*ABOUT ME*/
+  #notepad {
+    width: 60%;
+  }
+  /*ABOUT ME END*/
+
   /*CURRICULUMN VITAE*/
   #toad-wuh {
     padding-bottom: 2%;
